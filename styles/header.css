@@ -28,7 +28,6 @@
     font-size: 16px;
     display:flex;
     line-height: 20px;
-    background-color: #fefffe;
 }
 
 .link:hover {
@@ -43,23 +42,62 @@
     display: flex;
 }
 
+.nav-menu:hover > .nav-link {
+    font-weight: 700;
+    border-bottom: 3px solid #46A358;
+}
+
 .nav-menu:hover > .sub-list {
     display: flex;
 }
 
 .sub-list {
     position: absolute;
-    padding: 7px 13px 8px 14px;
-    background-color: aqua;
     display: none;
-    flex-direction: column;
-    gap: 9px;
+}
+
+.nav-sub-one {
     top: 100%;
-    left: -56px;
+    left: -56px; 
+    padding-top: 12px;
+}
+
+.sub-post {
+    background-color: #EDF6EE;
+    display: flex;
+    flex-direction: column;
 }
 
 .nav-sub-list {
+    width: 160px;
+}
+
+.nav-link-top {
+    text-decoration: none;
+    color: #3D3D3D;
+    font-size: 16px;
+    line-height: 20px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 13px 8px 14px;
+}
+
+.nav-link-top:hover {
+    color: #FFFFFF;
+}
+
+.nav-span:hover {
+    background-color: #46A358;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.nav-sub-link {
     width: 188px;
+    left: 100%;
+    top: -105px;
+    padding-left: 15px;
 }
 
 .login{
